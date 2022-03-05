@@ -21,12 +21,7 @@ setInterval(() => {
 }, 1000);
 
 // API
-
-document.addEventListener('keyup', () => {
-    searchCity()
-})
-
-btn.addEventListener('click', (e) => {
+btn.addEventListener('click', () => {
     if(city.value == "" || city.value == Number) {return}
     searchCity()
 })
@@ -55,4 +50,6 @@ function searchCity() {
         weatherPressure.textContent = data.list[0].main.pressure + " hPa"
     })
 }
-searchCity()
+// searchCity()
+
+
