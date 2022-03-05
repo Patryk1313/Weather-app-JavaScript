@@ -21,6 +21,11 @@ setInterval(() => {
 }, 1000);
 
 // API
+
+document.addEventListener("keyup", e => {
+    searchCity()
+});
+
 btn.addEventListener('click', () => {
     if(city.value == "" || city.value == Number) {return}
     searchCity()
