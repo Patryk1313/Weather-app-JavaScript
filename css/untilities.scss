@@ -1,0 +1,119 @@
+/*____________________Variables____________________*/
+
+$bg-color: #0E1529;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: no-repeat rgb(4,22,61);
+    background: linear-gradient(90deg, rgba(4,22,61,1) 0%, rgba(14,21,32,1) 99%);
+}
+
+/*____________________Untilities____________________*/
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*____________________Padding____________________*/
+
+.p1 {
+    padding: 1rem;
+}
+.p2 {
+    padding: 1.5rem;
+}
+.p3 {
+    padding: 2rem;
+}
+.p4 {
+    padding: 3rem;
+}
+.p5 {
+    padding: 4rem 0;
+}
+
+.py1 {
+    padding: 1rem 0;
+}
+.py2 {
+    padding: 1.5rem 0;
+}
+.py3 {
+    padding: 2rem 0;
+}
+.py4 {
+    padding: 3rem 0;
+}
+.py5 {
+    padding: 4rem 0;
+}
+
+/*____________________Marrgins____________________*/
+
+.m1 {
+    margin: 1rem;
+}
+.m2 {
+    margin: 1.5rem;
+}
+.m3 {
+    margin: 2rem;
+}
+.m4 {
+    margin: 3rem;
+}
+.m5 {
+    margin: 4rem 0;
+}
+
+.my1 {
+    margin: 1rem 0;
+}
+.my2 {
+    margin: 1.5rem 0;
+}
+.my3 {
+    margin: 2rem 0;
+}
+.my4 {
+    margin: 3rem 0;
+}
+.my5 {
+    margin: 4rem 0;
+}

@@ -1,0 +1,146 @@
+/*____________________Variables____________________*/
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #04163d;
+  background: -webkit-gradient(linear, left top, right top, from(#04163d), color-stop(99%, #0e1520));
+  background: linear-gradient(90deg, #04163d 0%, #0e1520 99%);
+}
+
+/*____________________Untilities____________________*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.grid-1 {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*____________________Padding____________________*/
+.p1 {
+  padding: 1rem;
+}
+
+.p2 {
+  padding: 1.5rem;
+}
+
+.p3 {
+  padding: 2rem;
+}
+
+.p4 {
+  padding: 3rem;
+}
+
+.p5 {
+  padding: 4rem 0;
+}
+
+.py1 {
+  padding: 1rem 0;
+}
+
+.py2 {
+  padding: 1.5rem 0;
+}
+
+.py3 {
+  padding: 2rem 0;
+}
+
+.py4 {
+  padding: 3rem 0;
+}
+
+.py5 {
+  padding: 4rem 0;
+}
+
+/*____________________Marrgins____________________*/
+.m1 {
+  margin: 1rem;
+}
+
+.m2 {
+  margin: 1.5rem;
+}
+
+.m3 {
+  margin: 2rem;
+}
+
+.m4 {
+  margin: 3rem;
+}
+
+.m5 {
+  margin: 4rem 0;
+}
+
+.my1 {
+  margin: 1rem 0;
+}
+
+.my2 {
+  margin: 1.5rem 0;
+}
+
+.my3 {
+  margin: 2rem 0;
+}
+
+.my4 {
+  margin: 3rem 0;
+}
+
+.my5 {
+  margin: 4rem 0;
+}
+/*# sourceMappingURL=untilities.css.map */

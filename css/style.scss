@@ -1,0 +1,114 @@
+// IMPORTS
+
+@import url(/css/animations.css);
+
+// MIXINS
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// SECTION--SEARCH
+
+.search {
+    min-height: 80px;
+        input {
+            width: 400px;
+            height: 30px;
+            padding: 0 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+
+            background: rgba(255, 255, 255, 0.11);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: none;
+            color: #fff;
+
+        }
+        button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+                i {
+                    font-size: 20px;
+                    color: #fff;
+                }
+        }
+}
+
+.date {
+    width: 100%;
+    height: 50px;
+    p {
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+.weather {
+    min-height: 500px;
+}
+
+.weather-icon {
+    max-height: auto;
+    img {
+        animation: moveImg 4s ease-in-out infinite;
+    }
+}
+
+.weather-info {
+    min-height: 400px;
+}
+
+.weather-info--temperature {
+    width: 100%;
+        h1 {
+            font-size: 90px;
+            color: #fff;
+        }
+}
+
+.weather-info--location,
+.weather-info--description{
+    height: 30px;
+        p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+}
+
+.weather-info--mainInfo {
+    height: 100px;
+    div {
+        @include flex;
+        width: 200px;
+        height: 80px;
+        background-color: #fff;
+
+        background: rgba(255, 255, 255, 0.11);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: none;
+        color: #fff;
+        margin: 0 10px;
+    }
+}
+
+// Media Querys
+
+@media (max-width: 768px) {
+    .search input {
+        width: 20px;
+    }
+}
