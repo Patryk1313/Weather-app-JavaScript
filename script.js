@@ -8,7 +8,6 @@ let weatherWind = document.querySelector('.wind')
 let weatherPressure =  document.querySelector('.pressure')
 
 const city = document.querySelector('#searchCity')
-const btn = document.querySelector('#search')
 
 // REFRESH TIME
 function refDate (){
@@ -23,13 +22,9 @@ setInterval(() => {
 // API
 
 document.addEventListener("keyup", e => {
-    searchCity()
-});
-
-btn.addEventListener('click', () => {
     if(city.value == "" || city.value == Number) {return}
     searchCity()
-})
+});
 
 function searchCity() {
     const APIKey = '8d4e7766d7e7bc6d818d57d0f2ba1015'
