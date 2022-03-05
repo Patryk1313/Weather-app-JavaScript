@@ -22,7 +22,6 @@ setInterval(() => {
 // API
 
 document.addEventListener("keyup", e => {
-    if(city.value == "" || city.value == Number) {return}
     searchCity()
 });
 
